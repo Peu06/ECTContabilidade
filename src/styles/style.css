@@ -7,8 +7,9 @@
     box-sizing: border-box;
 }
 
+
 body{
-    background-color: rgb(149, 221, 250);
+    background-color: rgb(255, 255, 255);
 }
 
 .btn-default {
@@ -28,4 +29,11 @@ body{
 
 .btn-default:hover {
     background-color: aqua;
+}
+
+.img_calc{
+    padding: 20px;
+    width: 100%;
+    margin: auto;
+
 }
