@@ -32,8 +32,44 @@ body{
 }
 
 .img_calc{
-    padding: 20px;
     width: 100%;
     margin: auto;
 
+}
+
+#calc_ft{
+    font-size: 150px;
+}
+
+.container-2pg{
+    display: flex;
+    font-size: 50px;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row; 
+    text-align: center;
+    margin-top: 50px;
+    gap: 90px;
+}
+
+.container-agendamento{
+    background-color: gray;
+    text-align: center;
+    margin-top: 50px; 
+}
+
+.txt-agnd{
+    margin-top: 50px;
+}
+
+
+
+@media screen and (max-width: 1252px){
+    .container-2pg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 60px;
+    }
 }
