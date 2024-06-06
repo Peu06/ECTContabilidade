@@ -43,33 +43,46 @@ body {
     font-size: 150px;
 }
 
-.container-2pg {
+.area-inicial {
     display: flex;
-    font-size: 50px;
+    font-size: 30px;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
     text-align: center;
-    margin-top: 50px;
-    gap: 90px;
-}
-
-.container-agendamento {
-    background-color: gray;
-    text-align: center;
-    margin-top: 50px;
 }
 
 .container-2pg {
-    text-align: center;
+    display: flex;
     font-size: 30px;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .txt-agnd {
     margin-top: 50px;
 }
 
-@media (width < 300px) {
+.area-inicial h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 90px;
+}
+
+.img_calc {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 300px) {
     .hidden {
         display: none;
     }
