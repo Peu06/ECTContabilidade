@@ -7,8 +7,7 @@
     box-sizing: border-box;
 }
 
-
-body{
+body {
     background-color: rgb(255, 255, 255);
 }
 
@@ -25,47 +24,59 @@ body{
     box-shadow: 0px 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: background-color .3s ease;
+    font-size: 16px;
 }
 
 .btn-default:hover {
-    background-color: aqua;
+    background-color: rgba(0, 0, 255, 0.329);
+    color: white;
+    transition: all ease-in-out .3s;
 }
 
-.img_calc{
+.img_calc {
     width: 100%;
-    margin: auto;
-
+    max-width: 2560px;
+    height: auto;
 }
 
-#calc_ft{
+#calc_ft {
     font-size: 150px;
 }
 
-.container-2pg{
+.container-2pg {
     display: flex;
     font-size: 50px;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row; 
+    flex-direction: row;
     text-align: center;
     margin-top: 50px;
     gap: 90px;
 }
 
-.container-agendamento{
+.container-agendamento {
     background-color: gray;
     text-align: center;
-    margin-top: 50px; 
-}
-
-.txt-agnd{
     margin-top: 50px;
 }
 
+.container-2pg {
+    text-align: center;
+    font-size: 30px;
+}
 
+.txt-agnd {
+    margin-top: 50px;
+}
 
-@media screen and (max-width: 1252px){
-    .container-2pg{
+@media (width < 300px) {
+    .hidden {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container-2pg {
         display: flex;
         flex-direction: column;
         align-items: center;

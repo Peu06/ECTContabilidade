@@ -3,7 +3,7 @@ header {
     padding: 28px 8%;
     position: sticky;
     top: 0;
-    background-color: rgb(149, 221, 250);
+    background-color: #001eff;
     z-index: 3;
 }
 
@@ -12,6 +12,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 20px;
 }
 
 #nav_logo {
@@ -27,8 +28,13 @@ header {
 
 .nav-item a {
     text-decoration: none;
-    color: #1d1d1dad;
+    color: white;
     font-weight: 600;
+}
+
+.nav-item a:hover {
+    color: white;
+    transition: all ease-in-out .3s;
 }
 
 .nav-item.active a {
@@ -44,14 +50,26 @@ header {
     display: none;
 }
 
-@media screen and (max-width: 1252px) {
+.text-navbar {
+    font-weight: bold;
+    font-size: 26px;
+    color: white;
+}
+
+@media (width < 1345px) {
+    #navbar {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
     #nav_list,
     #navbar .btn-default {
         display: none;
         text-decoration: none;
     }
-
-
 
     #mobile_btn {
         display: block;
@@ -78,12 +96,12 @@ header {
         list-style: none;
         text-align: center;
 
-    } 
+    }
 
-    #mobile_nav_list .mobile_nav_item{
+    #mobile_nav_list .mobile_nav_item {
         list-style: none;
         text-align: center;
-        
-        
+
+
     }
 }
