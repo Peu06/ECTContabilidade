@@ -12,7 +12,7 @@ body {
     background-image: linear-gradient(45deg, white);
 }
 
-.button--default {
+.btn-default {
     border: 1px solid;
     display: flex;
     align-items: center;
@@ -28,13 +28,13 @@ body {
     font-size: 16px;
 }
 
-.button--default:hover {
+.btn-default:hover {
     background-color: rgba(0, 0, 255, 0.329);
     color: white;
     transition: all ease-in-out .3s;
 }
 
-.initial-area__image {
+.img_calc {
     width: 100%;
     max-width: 2560px;
     height: auto;
@@ -43,11 +43,11 @@ body {
     mask-image: linear-gradient(to top, transparent 5%, black);
 }
 
-.feature__icon {
+#calc_ft {
     font-size: 150px;
 }
 
-.initial-area {
+.area-inicial {
     display: flex;
     font-size: 30px;
     align-items: center;
@@ -55,7 +55,7 @@ body {
     text-align: center;
 }
 
-.features {
+.container-2pg {
     display: flex;
     font-size: 30px;
     align-items: center;
@@ -64,12 +64,11 @@ body {
     margin-top: 50px;
 }
 
-.client-area__title {
+.txt-agnd {
     margin-top: 50px;
 }
 
-.initial-area__title {
-    font-family: 'Arial Narrow';
+.area-inicial h1 {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -82,9 +81,8 @@ body {
     font-size: 120px;
     z-index: 1;
     white-space: nowrap;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: rgb(255, 255, 255);
 }
+
 
 @media (max-width: 300px) {
     .hidden {
@@ -92,12 +90,44 @@ body {
     }
 }
 
+@media screen and (max-width: 500px){
+    .area-inicial h1{
+        position: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        font-size: 30px !important;
+        z-index: 1;
+        white-space: normal;
+    }
+}
+
 @media screen and (max-width: 1024px) {
-    .features {
+    .container-2pg {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 60px;
+    }
+
+    .area-inicial h1{
+        position: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(255, 255, 255, 0);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(0, 0, 0);
+        font-size: 60px;
+        z-index: 1;
+        white-space: normal;
     }
 }
