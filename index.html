@@ -15,54 +15,54 @@
 </head>
 
 <body>
-    <header>
-        <nav id="navbar">
-            <span class="text-navbar hidden">ECTContabilidade</span>
-            <ul id="nav_list">
-                <li class="nav-item">
-                    <a href="#home">Início</a>
+    <header class="header">
+        <nav class="navbar">
+            <span class="navbar__text hidden">ECTContabilidade</span>
+            <ul class="navbar__list" id="nav_list">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__link">Início</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#areadocliente">Área do Cliente</a>
+                <li class="navbar__item">
+                    <a href="#areadocliente" class="navbar__link">Área do Cliente</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#sobrenos">Sobre Nós</a>
+                <li class="navbar__item">
+                    <a href="#sobrenos" class="navbar__link">Sobre Nós</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#faleconosco">Fale Conosco</a>
+                <li class="navbar__item">
+                    <a href="#faleconosco" class="navbar__link">Fale Conosco</a>
                 </li>
             </ul>
-            <button class="btn-default">
+            <button class="button button--default">
                 Fazer Agendamento
             </button>
-            <button id="mobile_btn">
+            <button class="navbar__mobile-btn" id="mobile_btn">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
     </header>
     
-    <div class="area-inicial">
-        <h1 style="border: 5px;">ABRA SUA EMPRESA</h1>
-        <img class="img_calc" src="img/calculadora.jpg" alt="Calculadora">
-</div>
-    <div class="container-2pg">
-        <div class="container-calc">
-            <i class="fa-solid fa-calculator" id="calc_ft"></i>
-            <h2>Praticidade</h2>
+    <div class="initial-area">
+        <h1 class="initial-area__title">ABRA SUA EMPRESA</h1>
+        <img class="initial-area__image" src="img/calculadora.jpg" alt="Calculadora">
+    </div>
+    <div class="features">
+        <div class="feature feature--calculator">
+            <i class="fa-solid fa-calculator feature__icon"></i>
+            <h2 class="feature__title">Praticidade</h2>
         </div>
-        <div class="container-brain">
-            <i class="fa-solid fa-brain" id="calc_ft"></i>
-            <h2>Compromisso</h2>
+        <div class="feature feature--brain">
+            <i class="fa-solid fa-brain feature__icon"></i>
+            <h2 class="feature__title">Compromisso</h2>
         </div>
-        <div class="container-bolt">
-            <i class="fa-solid fa-bolt" id="calc_ft"></i>
-            <h2>Agilidade</h2>
+        <div class="feature feature--bolt">
+            <i class="fa-solid fa-bolt feature__icon"></i>
+            <h2 class="feature__title">Agilidade</h2>
         </div>
     </div>
-    <div class="container-agendamento">
-        <h1 class="txt-agnd">ÁREA DO CLIENTE</h1>
-        <button class="btn-agnd">FAÇA SEU AGENDAMENTO</button>
-        <i class="fa-solid fa-bell"></i>
+    <div class="client-area">
+        <h1 class="client-area__title">ÁREA DO CLIENTE</h1>
+        <button class="button button--agendamento">FAÇA SEU AGENDAMENTO</button>
+        <i class="fa-solid fa-bell client-area__icon"></i>
     </div>
     <script src="src/js/script.js"></script>
 </body>

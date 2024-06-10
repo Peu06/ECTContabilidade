@@ -1,4 +1,4 @@
-header {
+.header {
     width: 100%;
     padding: 28px 8%;
     position: sticky;
@@ -8,7 +8,7 @@ header {
     opacity: 0.99;
 }
 
-#navbar {
+.navbar {
     width: 100%;
     display: flex;
     align-items: center;
@@ -16,72 +16,66 @@ header {
     font-size: 20px;
 }
 
-#nav_logo {
-    font-size: 24px;
-    color: var(--color-primary-6);
-}
-
-#nav_list {
+.navbar__list {
     display: flex;
     list-style: none;
     gap: 48px;
+}
+
+.navbar__item {
     text-decoration: none;
 }
 
-#mobile_nav_list li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.nav-item a {
+.navbar__link {
     text-decoration: none;
     color: white;
     font-weight: 600;
 }
 
-.nav-item a:hover {
+.navbar__link:hover {
     transform: scale(1.5, 2);
     transition: all ease-in-out .3s;
     color: #2b2b2b;
 }
 
-.nav-item.active a {
+.navbar__item--active .navbar__link {
     color: var(--color-neutral-1);
     border-bottom: 3px solid var(--color-primary-4);
 }
 
-#mobile_btn {
+.navbar__mobile-btn {
     display: none;
     color: white;
 }
 
-#mobile_area {
+.navbar__mobile-area {
     display: none;
 }
 
-.text-navbar {
+.navbar__text {
     font-weight: bold;
     font-size: 26px;
     color: white;
 }
 
+.hidden {
+    display: none;
+}
+
 @media (width < 1345px) {
-    #navbar {
+    .navbar {
         font-size: 16px;
         font-weight: bold;
     }
 }
 
 @media screen and (max-width: 1024px) {
-
-    #nav_list,
-    #navbar .btn-default {
+    .navbar__list,
+    .button--default {
         display: none;
-        text-decoration: none;
     }
 
-    #mobile_btn {
+    .navbar__mobile-btn {
         display: block;
         border: none;
         background-color: transparent;
@@ -89,29 +83,21 @@ header {
         cursor: pointer;
     }
 
-    #mobile_area.active {
+    .navbar__mobile-area--active {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #mobile_nav_list {
+    .navbar__mobile-list {
         display: flex;
         flex-direction: column;
         gap: 12px;
         margin: 12px 0px;
     }
 
-    #mobile_nav_list .nav-item {
+    .navbar__mobile-item {
         list-style: none;
         text-align: center;
-
-    }
-
-    #mobile_nav_list .mobile_nav_item {
-        list-style: none;
-        text-align: center;
-
-
     }
 }

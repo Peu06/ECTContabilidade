@@ -12,7 +12,7 @@ body {
     background-image: linear-gradient(45deg, white);
 }
 
-.btn-default {
+.button--default {
     border: 1px solid;
     display: flex;
     align-items: center;
@@ -28,13 +28,13 @@ body {
     font-size: 16px;
 }
 
-.btn-default:hover {
+.button--default:hover {
     background-color: rgba(0, 0, 255, 0.329);
     color: white;
     transition: all ease-in-out .3s;
 }
 
-.img_calc {
+.initial-area__image {
     width: 100%;
     max-width: 2560px;
     height: auto;
@@ -43,11 +43,11 @@ body {
     mask-image: linear-gradient(to top, transparent 5%, black);
 }
 
-#calc_ft {
+.feature__icon {
     font-size: 150px;
 }
 
-.area-inicial {
+.initial-area {
     display: flex;
     font-size: 30px;
     align-items: center;
@@ -55,7 +55,7 @@ body {
     text-align: center;
 }
 
-.container-2pg {
+.features {
     display: flex;
     font-size: 30px;
     align-items: center;
@@ -64,11 +64,11 @@ body {
     margin-top: 50px;
 }
 
-.txt-agnd {
+.client-area__title {
     margin-top: 50px;
 }
 
-.area-inicial h1 {
+.initial-area__title {
     font-family: 'Arial Narrow';
     position: absolute;
     left: 50%;
@@ -93,7 +93,7 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-    .container-2pg {
+    .features {
         display: flex;
         flex-direction: column;
         align-items: center;
