@@ -5,83 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECTContabilidade</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/styles/style.css">
-    <link rel="stylesheet" href="src/styles/header.css">
 </head>
 
 <body>
     <header>
-        <nav id="navbar">
-            <span class="text-navbar hidden">ECTContabilidade</span>
-            <ul id="nav_list">
-                <li class="nav-item active">
-                    <a href="#inicio">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#areadocliente">Área do Cliente</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#sobrenos">Sobre Nós</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#faleconosco">Fale Conosco</a>
-                </li>
-            </ul>
-            <button class="btn-default">
-                Fazer Agendamento
-            </button>
-        </nav>
-        
-
-        <div id="mobile_area">
-            <ul id="mobile_nav_list">
-                <li class="mobile_nav_item">
-                    <a href="#home">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#areadocliente">Área do Cliente</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#sobrenos">Sobre Nós</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#faleconosco">Fale Conosco</a>
-                </li>
-            </ul>
-            <button id="mobile_btn">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+        <div class="container">
+            <div class="area">
+                <div class="logo">
+                </div>
+                <h2 style="color: white;">ECTContabilidade</h2>
+                <div class="menu-opener">
+                    <div class="hamburguer-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="close-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Início</a></li>
+                    <li><a href="">Área do Cliente</a></li>
+                    <li><a href="">Sobre nós</a></li>
+                    <li><a href="" class="bold">Fazer Agendamento</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     
-    <div class="area-inicial">
-        <h1 style="border: 5px;">ABRA SUA EMPRESA</h1>
-        <img class="img_calc" src="img/calculadora.jpg" alt="Calculadora">
-</div>
-    <div class="container-2pg">
-        <div class="container-calc">
-            <i class="fa-solid fa-calculator" id="calc_ft"></i>
-            <h2>Praticidade</h2>
-        </div>
-        <div class="container-brain">
-            <i class="fa-solid fa-brain" id="calc_ft"></i>
-            <h2>Compromisso</h2>
-        </div>
-        <div class="container-bolt">
-            <i class="fa-solid fa-bolt" id="calc_ft"></i>
-            <h2>Agilidade</h2>
-        </div>
-    </div>
-    <div class="container-agendamento">
-        <h1 class="txt-agnd">ÁREA DO CLIENTE</h1>
-        <button class="btn-agnd">FAÇA SEU AGENDAMENTO</button>
-        <i class="fa-solid fa-bell"></i>
-    </div>
+
     <script src="src/js/script.js"></script>
 </body>
 

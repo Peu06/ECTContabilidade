@@ -1,9 +1,15 @@
-$(document).ready(function(){
-    $('#mobile_btn').on('click', function () {
-        $('#mobile_area').toggleClass('active');
-        $('#mobile_btn').find('i').toggleClass('fa-x');
-    });
-});
+// MENU
+let menuOpener = document.querySelector('.menu-opener')
+let nav = document.querySelector('header nav')
 
-const sections = $('section');
-const navItems = $('.nav-item');
+menuOpener.addEventListener('click', () => {
+    if (nav.classList.contains('opened')) {
+        nav.classList.remove('opened')
+        menuOpener.querySelector('.close-icon').style.display = 'none'
+        menuOpener.querySelector('.hamburguer-icon').style.display = 'flex'
+    } else {
+        nav.classList.add('opened')
+        menuOpener.querySelector('.close-icon').style.display = 'flex'
+        menuOpener.querySelector('.hamburguer-icon').style.display = 'none'
+    }
+})
