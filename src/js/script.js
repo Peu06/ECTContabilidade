@@ -20,7 +20,7 @@ function showSlide(index) {
     const container = document.querySelector('.cards-container');
     const cards = document.querySelectorAll('.card');
     const totalSlides = cards.length;
-    const visibleSlides = 3; // Mostra 3 cards por vez
+    const visibleSlides = 3;
 
     if (index >= totalSlides - visibleSlides) {
         index = totalSlides - visibleSlides;
