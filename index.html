@@ -42,8 +42,8 @@
         <div class="texto">
             <h2>Abra sua empresa!</h2>
         </div>
-        <div class="cards-container">
-            <article class="card">
+        <div class="card-container">
+            <article class="card-child">
                 <h2>Consultoria Contábil</h2>
                 <p>Maximize seus lucros e minimize suas preocupações financeiras com nossa consultoria contábil
                     personalizada. Descubra como podemos otimizar sua contabilidade para impulsionar o crescimento do
@@ -52,7 +52,7 @@
                 <img src="/src/images/calculadora.jpg" alt="">
             </article>
 
-            <article class="card">
+            <article class="card-child">
                 <h2>Planejamento Tributário</h2>
                 <p>Transforme a complexidade tributária em uma vantagem competitiva. Nosso planejamento tributário
                     inteligente ajuda a reduzir custos e maximizar sua eficiência fiscal. Descubra como podemos otimizar
@@ -61,7 +61,7 @@
                 <img src="/src/images/calculadora.jpg" alt="">
             </article>
 
-            <article class="card">
+            <article class="card-child">
                 <h2>Assessoria Financeira</h2>
                 <p>Alcance a estabilidade financeira e impulsione seu crescimento com nossa assessoria financeira
                     especializada. Desde análises de investimentos até estratégias de gestão de caixa, estamos aqui para
@@ -70,53 +70,39 @@
                 <img src="/src/images/calculadora.jpg" alt="">
             </article>
         </div>
-        <div class="services-container" id="servicos">
-            <h1>Nossos Serviços</h1>
-            <div class="service-item">
-                <div class="service-content">
+
+        <div class="carousel">
+            <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+            <div class="cards-container">
+                <article class="card">
                     <h2>Imposto de Renda</h2>
                     <p>Garanta a conformidade e maximize suas restituições com nosso serviço de preparação e declaração
                         de imposto de renda.</p>
-                </div>
-                <img src="/src/images/calculadora.jpg" alt="Imposto de Renda">
-            </div>
-
-            <div class="service-item">
-                <div class="service-content">
+                </article>
+                <article class="card">
                     <h2>Serviços Contábeis</h2>
                     <p>Otimize sua contabilidade com nossos serviços completos, incluindo controle financeiro, análise
                         de balanços e mais.</p>
-                </div>
-                <img src="/src/images/calculadora.jpg" alt="Serviços Contábeis">
-            </div>
-
-            <div class="service-item">
-                <div class="service-content">
+                </article>
+                <article class="card">
                     <h2>Escrita Fiscal</h2>
                     <p>Eficiência e precisão na escrituração fiscal, com lançamentos de notas fiscais e cumprimento das
                         obrigações fiscais.</p>
-                </div>
-                <img src="/src/images/calculadora.jpg" alt="Escrita Fiscal">
-            </div>
-
-            <div class="service-item">
-                <div class="service-content">
+                </article>
+                <article class="card">
                     <h2>Departamento Pessoal</h2>
                     <p>Gestão completa do registro de funcionários, desde admissões e demissões até folha de pagamento e
                         benefícios.</p>
-                </div>
-                <img src="/src/images/calculadora.jpg" alt="Departamento Pessoal">
-            </div>
-
-            <div class="service-item">
-                <div class="service-content">
+                </article>
+                <article class="card">
                     <h2>Abertura e Encerramento de Empresa</h2>
                     <p>Orientação especializada para a abertura e encerramento de empresas, garantindo todos os
                         procedimentos legais e burocráticos.</p>
-                </div>
-                <img src="/src/images/calculadora.jpg" alt="Abertura e Encerramento de Empresa">
+                </article>
             </div>
+            <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
         </div>
+
     </main>
     <script src="src/js/script.js"></script>
 </body>

@@ -13,3 +13,34 @@ menuOpener.addEventListener('click', () => {
         menuOpener.querySelector('.hamburguer-icon').style.display = 'none'
     }
 })
+
+let currentSlide = 0;
+
+function showSlide(index) {
+    const container = document.querySelector('.cards-container');
+    const cards = document.querySelectorAll('.card');
+    const totalSlides = cards.length;
+    const visibleSlides = 3; // Mostra 3 cards por vez
+
+    if (index >= totalSlides - visibleSlides) {
+        index = totalSlides - visibleSlides;
+    }
+    if (index < 0) {
+        index = 0;
+    }
+
+    container.style.transform = `translateX(-${index * (100 / visibleSlides)}%)`;
+    currentSlide = index;
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide);
+});

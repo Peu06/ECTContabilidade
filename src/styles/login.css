@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     background: rgb(96, 195, 255);
     background: radial-gradient(circle, rgba(0, 157, 255, 0.651) 0%, rgb(41, 55, 255) 100%);
+    box-sizing: border-box;
 }
 
 .login-container {
@@ -87,19 +88,18 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
     cursor: pointer;
     font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-    box-sizing: border-box;
+    text-decoration: none;
 }
 
 .containerBack a {
     color: white;
-    text-decoration: none;
 }
 
 .containerBack:hover {
